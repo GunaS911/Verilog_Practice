@@ -4,6 +4,6 @@ module top_module(
     input c,
     input d,
     output out  ); 
-    assign out = (a^b^c^d);
+    assign out = a | (~b&c);
 endmodule
 
